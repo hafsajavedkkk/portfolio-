@@ -47,6 +47,43 @@
     a {
       color: #2563EB;
     }
+
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #D1D5DB;
+      border-radius: 6px;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background: #2563EB;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
 
@@ -116,7 +153,6 @@
         fixed workflow into a more agent-like system.
       </p>
     </div>
-
   </section>
 
   <section id="about">
@@ -144,6 +180,37 @@
         View my GitHub
       </a>
     </p>
+
+    <h3>Send Me a Message</h3>
+
+    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+      >
+
+      <textarea
+        name="message"
+        placeholder="Your message"
+        required
+      ></textarea>
+
+      <input type="hidden" name="_subject" value="New Portfolio Message">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Send Message</button>
+
+    </form>
   </section>
 
 </body>
