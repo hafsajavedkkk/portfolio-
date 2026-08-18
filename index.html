@@ -2,8 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Hafsa Javed | AI & ML Portfolio</title>
+
+  <!-- Basic SEO -->
+  <meta
+    name="description"
+    content="Hafsa Javed's AI and Machine Learning portfolio featuring practical ML, prompt engineering, AI workflows, and agent projects."
+  >
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Hafsa Javed | AI & ML Portfolio">
+  <meta
+    property="og:description"
+    content="Practical AI and machine learning projects by Hafsa Javed."
+  >
+  <meta property="og:type" content="website">
 
   <style>
     body {
@@ -18,13 +34,20 @@
 
     nav {
       margin-bottom: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
     }
 
     nav a {
-      margin-right: 20px;
       color: #2563EB;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
     }
 
     h1 {
@@ -55,6 +78,12 @@
       margin-top: 20px;
     }
 
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
     input,
     textarea {
       width: 100%;
@@ -64,6 +93,7 @@
       border: 1px solid #D1D5DB;
       border-radius: 6px;
       font-family: Arial, sans-serif;
+      font-size: 16px;
     }
 
     textarea {
@@ -79,139 +109,191 @@
       border-radius: 6px;
       cursor: pointer;
       font-weight: bold;
+      font-size: 16px;
     }
 
-    button:hover {
+    button:hover,
+    button:focus {
       opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 25px 16px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        margin-bottom: 40px;
+        gap: 14px;
+      }
+
+      .project {
+        padding: 16px;
+      }
+
+      form {
+        padding: 18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#home">Home</a>
     <a href="#projects">Projects</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="home">
-    <h1>Hafsa Javed</h1>
-    <h3>AI & Machine Learning Portfolio</h3>
+  <main>
 
-    <p>
-      I turn AI and machine-learning ideas into practical,
-      clear, and usable solutions.
-    </p>
-  </section>
+    <section id="home">
+      <h1>Hafsa Javed</h1>
+      <h3>AI & Machine Learning Portfolio</h3>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Machine Learning Task Framing</h3>
       <p>
-        I framed a real problem as a machine-learning task by defining
-        the task type, target, success metric, unit of analysis, and
-        how the prediction could support a real decision.
+        I turn AI and machine-learning ideas into practical,
+        clear, and usable solutions.
       </p>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Data Contract & Analysis</h3>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Machine Learning Task Framing</h3>
+        <p>
+          I framed a real problem as a machine-learning task by defining
+          the task type, target, success metric, unit of analysis, and
+          how the prediction could support a real decision.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Data Contract & Analysis</h3>
+        <p>
+          I explored how data should be structured for machine learning,
+          including features, labels, time windows, missing values,
+          limitations, and potential data leakage.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Baseline vs Machine Learning Model</h3>
+        <p>
+          I created a baseline decision rule and compared it with a
+          machine-learning model while examining predictions, errors,
+          and feature behaviour.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Prompt Engineering</h3>
+        <p>
+          I tested multiple versions of prompts and studied how context,
+          role assignment, examples, structure, and verification
+          requirements affect AI output.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Workflow & Agent Concepts</h3>
+        <p>
+          I designed a Draft → Critique → Revise workflow and explored
+          how tool access, connectors, and decision loops can turn a
+          fixed workflow into a more agent-like system.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+
       <p>
-        I explored how data should be structured for machine learning,
-        including features, labels, time windows, missing values,
-        limitations, and potential data leakage.
+        I am developing practical skills in artificial intelligence and
+        machine learning by building projects and documenting the
+        decisions behind them. My focus is on understanding how AI and
+        ML can be used to solve real problems rather than only learning
+        the theory.
       </p>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Baseline vs Machine Learning Model</h3>
+    <section id="contact">
+      <h2>Contact</h2>
+
       <p>
-        I created a baseline decision rule and compared it with a
-        machine-learning model while examining predictions, errors,
-        and feature behaviour.
+        I'm interested in opportunities where I can continue building
+        practical AI and machine-learning experience.
       </p>
-    </div>
 
-    <div class="project">
-      <h3>AI Prompt Engineering</h3>
       <p>
-        I tested multiple versions of prompts and studied how context,
-        role assignment, examples, structure, and verification
-        requirements affect AI output.
+        <a
+          href="https://github.com/hafsajavedkkk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View my GitHub
+        </a>
       </p>
-    </div>
 
-    <div class="project">
-      <h3>AI Workflow & Agent Concepts</h3>
-      <p>
-        I designed a Draft → Critique → Revise workflow and explored
-        how tool access, connectors, and decision loops can turn a
-        fixed workflow into a more agent-like system.
-      </p>
-    </div>
-  </section>
+      <h3>Send Me a Message</h3>
 
-  <section id="about">
-    <h2>About Me</h2>
+    
+      <form action="https://formsubmit.co/hafsajaved2006@gmail.com" method="POST">
 
-    <p>
-      I am developing practical skills in artificial intelligence and
-      machine learning by building projects and documenting the
-      decisions behind them. My focus is on understanding how AI and
-      ML can be used to solve real problems rather than only learning
-      the theory.
-    </p>
-  </section>
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Your name"
+          maxlength="100"
+          required
+        >
 
-  <section id="contact">
-    <h2>Contact</h2>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Your email"
+          maxlength="150"
+          required
+        >
 
-    <p>
-      I'm interested in opportunities where I can continue building
-      practical AI and machine-learning experience.
-    </p>
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message"
+          maxlength="2000"
+          required
+        ></textarea>
 
-    <p>
-      <a href="https://github.com/hafsajavedkkk" target="_blank">
-        View my GitHub
-      </a>
-    </p>
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Portfolio Message"
+        >
 
-    <h3>Send Me a Message</h3>
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
 
-    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <button type="submit">Send Message</button>
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name"
-        required
-      >
+      </form>
+    </section>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Your email"
-        required
-      >
-
-      <textarea
-        name="message"
-        placeholder="Your message"
-        required
-      ></textarea>
-
-      <input type="hidden" name="_subject" value="New Portfolio Message">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit">Send Message</button>
-
-    </form>
-  </section>
+  </main>
 
 </body>
 </html>
